@@ -1,0 +1,51 @@
+version: "3.7"
+
+services:
+  nginx:
+    build: ./docker/nginx
+    env_file: ./docker/nginx/.env
+    container_name: "kg_nginx"
+    volumes:
+      - "./app:/var/www/app"
+      - "./docker/nginx/logs:/var/log/nginx"
+    ports:
+      - "${NGINX_OUTPUT_PORT}:80"
+    depends_on:
+      - php
+  php:
+    build: ./docker/php
+    container_name: "kg_php"
+    restart: "no"
+    environment:
+      - "HOST_UID=${UID}"
+      - "HOST_GID=${GID}"
+      - XDEBUG_CONFIG=remote_host=172.28.0.1 idekey=PHPSTORM
+      - PHP_IDE_CONFIG=serverName=kg
+    volumes:
+      - "./app:/var/www/app"
+    depends_on:
+      - mysqldb
+      - mysqldb_test
+      - redis
+  mysqldb:
+    build: ./docker/mysql
+    container_name: "kg_mysql"
+    restart: "no"
+    env_file: ./docker/mysql/dev.env
+    ports:
+      - "${MYSQL_OUTPUT_PORT}:3306"
+    volumes:
+      - mysqldbdata:/var/lib/mysql
+  mysqldb_test:
+    build: ./docker/mysql
+    container_name: "kg_mysql_test"
+    restart: "no"
+    env_file: ./docker/mysql/test.env
+    ports:
+      - "${MYSQL_TEST_OUTPUT_PORT}:3306"
+  redis:
+    build: ./docker/redis
+    container_name: "kg_redis"
+    restart: "no"
+volumes:
+  mysqldbdata:
