@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
@@ -29,17 +28,8 @@
             font-family: 'Rubik', sans-serif;
         }
 
-        .header {
-            font-size: 30px;
-            color: #ffffff;
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
         .content {
             padding: 67px 120px;
-
         }
 
         .section_head {
@@ -237,6 +227,7 @@
         }
         .header-block > img {
             border-radius: 50%;
+            width: 35px;
         }
 
         .header-block-2 {
@@ -295,6 +286,7 @@
             margin-bottom: 10px;
             margin-right: 16px;
             font-weight: 700;
+            color: #1A1D3B;
         }
         .hero-section-btn-secondary {
             background: transparent;
@@ -372,17 +364,17 @@
 
         <div class="header-block-2">
             <div class="language-select">
-                <a>Ру</a>
-                <a>Кы</a>
-                <a>En</a>
+<!--                <a>Ру</a>-->
+<!--                <a>Кы</a>-->
+<!--                <a>En</a>-->
             </div>
             <div class="movement-logo-and-name">
                 <img src="static/images/movement_logo.png">
                 <b>БАТКЕНГЕ ЖАРДАМ</b>
             </div>
             <div class="social-media">
-                <img src="static/images/telegram-icon.png" />
-                <img src="static/images/instagram-icon.png" />
+                <a href="https://t.me/batkengejardam2022" target="_blank"><img src="static/images/telegram-icon.svg" /></a>
+                <a href="https://www.instagram.com/batkenge_jardam/" target="_blank" ><img src="static/images/instagram-icon.svg" /></a>
             </div>
         </div>
     </header>
@@ -391,8 +383,8 @@
         <div class="hero-section-left">
             <div class="hero-section-title">Помощь пострадавшим от вторжения Таджикистана.</div>
             <div>
-                <button class="hero-section-btn-primary">Помочь финансово</button>
-                <button class="hero-section-btn-secondary">Стать волонтером</button>
+                <a href="#financial-help-info"><button class="hero-section-btn-primary">Помочь финансово</button></a>
+                <a href="#volunteering-help-info"><button class="hero-section-btn-secondary">Стать волонтером</button></a>
             </div>
         </div>
         <div class="hero-section-right">
@@ -405,7 +397,7 @@
     <div class="content col-md-12">
         <div class="contentLeft col-md-8">
             <div class="section_head col-md-12">
-                <div class="section_head_q col-md-12">Как помочь финансово?</div>
+                <div class="section_head_q col-md-12" id="financial-help-info">Как помочь финансово?</div>
                 <div class="section_head_main col-md-12">Реквизиты для перечисления благотворительной помощи</div>
             </div>
             <ul class="nav nav nav-tabs custom_nav-tabs col-md-12">
@@ -643,7 +635,7 @@
 <!--                </div>-->
 
 <!--            </div>-->
-            <div class="section_head section_head2 col-md-12">
+            <div class="section_head section_head2 col-md-12" id="volunteering-help-info">
                 <div class="section_head_q col-md-12">Как стать волонтёром?</div>
                 <div class="section_head_main col-md-12">Контакты для координации гуманитарной помощи</div>
             </div>
