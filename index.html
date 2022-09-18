@@ -319,7 +319,7 @@
             }
 
             .hero-section{
-                height: 300px;
+                height: 250px;
                 margin-bottom: 20px;
             }
 
@@ -339,6 +339,15 @@
             }
             .hero-section-right {
                 width: 25%;
+            }
+
+            .hero-section-btn-primary {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+            .hero-section-btn-secondary {
+                padding: 8px 16px;
+                font-size: 12px;
             }
         }
     </style>
@@ -464,14 +473,11 @@
 
             <div class="accordion " id="accordionExample">
                 <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <button class="collapseButton" type="button" data-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
-                            Красный полумесяц
-                        </button>
+                    <div class="card-header collapseButton" id="headingOne">
+                        Красный полумесяц
                     </div>
 
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body ul">
                             <ul>
                                 <li>Красный полумесяц, пожертвования банковскими картами</li>
@@ -483,15 +489,10 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                            <button class="collapseButton" data-toggle="collapse" data-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                Kaspi bank (Казахстан)
-                            </button>
-                        </h5>
+                    <div class="card-header collapseButton" id="headingTwo">
+                        Kaspi bank (Казахстан)
                     </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
                             <ul>
                                 <li>Номер карты: 4400 4301 5960 6596</li>
