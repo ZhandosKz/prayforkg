@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<!--    <link rel="manifest" href="/site.webmanifest">-->
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -38,67 +38,87 @@
         }
 
         .content {
+            padding: 67px 120px;
 
         }
 
         .section_head {
-
+            padding: 0;
+            margin: 0 0 40px;
         }
 
         .section_head_q {
-            font-family: 'Rubik';
+            font-family: 'Rubik', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
             color: #000000;
+            margin: 0;
+            padding: 0;
         }
 
         .section_head_main {
-            font-family: 'Rubik';
+            font-family: 'Rubik', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 40px;
             line-height: 48px;
             color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contentLeft {
+            padding: 0;
+
         }
 
         .custom_nav-tabs {
             margin-top: 20px;
             display: flex;
-            font-family: 'Rubik';
+            font-family: 'Rubik', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
             color: #000000;
+            margin-bottom: 32px;
         }
 
         .tab-content {
             margin-bottom: 40px;
+            padding: 0;
+        }
+
+        .left_tab {
+            padding: 0;
+            display: flex;
         }
 
         .tab-content_left {
-            font-family: 'Rubik';
+            font-family: 'Rubik', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
             color: #000000;
             opacity: 0.7;
+            padding: 0;
         }
 
         .tab-content_right {
-            font-family: 'Rubik';
+            font-family: 'Rubik', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
             color: #000000;
+            padding: 0;
         }
 
         .collapseButton {
-            font-family: 'Rubik';
+            font-family: 'Rubik', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 18px;
@@ -112,6 +132,96 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
+        }
+
+        .card-body ul{
+            margin-top: 10px;
+            padding: 20px;
+        }
+
+        .section_head2 {
+            padding-top: 135px;
+        }
+
+        .left_tab2{
+            margin-bottom: 40px;
+        }
+        /*For mobile */
+        @media only screen and (max-width: 600px) {
+            .content {
+                padding: 32px 20px;
+            }
+
+            .section_head2 {
+                padding-top: 135px;
+            }
+
+            .section_head_q {
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000000;
+                margin: 0;
+                padding: 0;
+            }
+
+            .section_head_main {
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 26px;
+                color: #000000;
+                padding: 0;
+                margin: 8px 0 48px;
+            }
+
+            .custom_nav-tabs {
+                margin-top: 20px;
+                /*display: flex;*/
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: #000000;
+                margin-bottom: 32px;
+            }
+
+            .custom_nav-tabs li a {
+                padding: 5px;
+            }
+
+            .left_tab {
+                display: flex;
+            }
+
+            .tab-content_left {
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000000;
+                opacity: 0.7;
+                padding: 0;
+            }
+
+            .tab-content_right {
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000000;
+                padding: 0;
+            }
+
+            .section_right {
+                margin-top: 135px;
+            }
         }
 
         .header-block {
@@ -293,7 +403,7 @@
 
 
     <div class="content col-md-12">
-        <div class="col-md-8">
+        <div class="contentLeft col-md-8">
             <div class="section_head col-md-12">
                 <div class="section_head_q col-md-12">Как помочь финансово?</div>
                 <div class="section_head_main col-md-12">Реквизиты для перечисления благотворительной помощи</div>
@@ -305,50 +415,50 @@
             </ul>
 
             <div class="tab-content col-md-12">
-                <div id="home" class="tab-pane fade in active">
-                    <div class="col-md-12">
-                        <p class="tab-content_left col-md-4">Получатель</p>
-                        <p class="tab-content_right col-md-8">Аппарат полномочного представителя ПКР в Баткенской
+                <div id="home" class="tab-pane fade in active tab-pane2">
+                    <div class="left_tab col-md-12" >
+                        <div class="tab-content_left col-md-4 col-xs-6">Получатель</div>
+                        <p class="tab-content_right col-md-8 col-xs-6">Аппарат полномочного представителя ПКР в Баткенской
                             области</p>
                     </div>
-                    <div class="col-md-12">
-                        <p class="tab-content_left col-md-4">Банк получателя</p>
-                        <p class="tab-content_right col-md-8">Центральное казначейство МФКР</p>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">Банк получателя</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">Центральное казначейство МФКР</p>
                     </div>
-                    <div class="col-md-12">
-                        <p class="tab-content_left col-md-4">Счет получателя</p>
-                        <p class="tab-content_right col-md-8">4409 0211 0300 5073</p>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">Счет получателя</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">4409 0211 0300 5073</p>
                     </div>
-                    <div class="col-md-12">
-                        <p class="tab-content_left col-md-4">БИК (МКП, ВКП)</p>
-                        <p class="tab-content_right col-md-8">440902</p>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">БИК (МКП, ВКП)</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">440902</p>
                     </div>
-                    <div class="col-md-12">
-                        <p class="tab-content_left col-md-4">БИК (через банки)</p>
-                        <p class="tab-content_right col-md-8">440001</p>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">БИК (через банки)</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">440001</p>
                     </div>
                 </div>
 
                 <div id="menu1" class="tab-pane fade">
-                    <div class="col-md-12">
-                        <p class="tab-content_left col-md-4">Банк получателя</p>
-                        <p class="tab-content_right col-md-8">ОАО “Айыл Банк”</p>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">Банк получателя</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">ОАО “Айыл Банк”</p>
                     </div>
-                    <div class="col-md-12">
-                        <p class="tab-content_left col-md-4">Счет получателя</p>
-                        <p class="tab-content_right col-md-8">1352119929762602</p>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">Счет получателя</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">1352119929762602</p>
                     </div>
-                    <div class="col-md-12">
-                        <p class="tab-content_left col-md-4">БИК (МКП, ВКП)</p>
-                        <p class="tab-content_right col-md-8">135001</p>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">БИК (МКП, ВКП)</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">135001</p>
                     </div>
-                    <div class="col-md-12">
-                        <p class="tab-content_left col-md-4">Назначение</p>
-                        <p class="tab-content_right col-md-8">Помощь пострадавшим в Баткенских событиях</p>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">Назначение</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">Помощь пострадавшим в Баткенских событиях</p>
                     </div>
-                    <div class="col-md-12">
-                        <p class="tab-content_left col-md-4">Код платежа</p>
-                        <p class="tab-content_right col-md-8">14411100</p>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">Код платежа</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">14411100</p>
                     </div>
 
                 </div>
@@ -364,7 +474,7 @@
                     </div>
 
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
+                        <div class="card-body ul">
                             <ul>
                                 <li>Откройте приложение Элсом</li>
                                 <li>Получатель (Т.А.): +996 707 22 42 01</li>
@@ -533,38 +643,58 @@
                 </div>
 
             </div>
-            <div class="section_head col-md-12">
-                <div class="section_head_q col-md-12">Как помочь финансово?</div>
-                <div class="section_head_main col-md-12">Реквизиты для перечисления благотворительной помощи</div>
+            <div class="section_head section_head2 col-md-12">
+                <div class="section_head_q col-md-12">Как стать волонтёром?</div>
+                <div class="section_head_main col-md-12">Контакты для координации гуманитарной помощи</div>
             </div>
 
-            <div>
-                <div class="col-md-12">
-                    <p class="tab-content_left col-md-4">Банк получателя</p>
-                    <p class="tab-content_right col-md-8">Центральное казначейство МФКР</p>
+            <div class="left_tab2 col-md-12">
+                <div class="left_tab col-md-12">
+                    <p class="tab-content_left col-md-4 col-xs-6">Банк получателя</p>
+                    <p class="tab-content_right col-md-8 col-xs-6">Центральное казначейство МФКР</p>
                 </div>
-                <div class="col-md-12">
-                    <p class="tab-content_left col-md-4">Счет получателя</p>
-                    <p class="tab-content_right col-md-8">4409 0211 0300 5073</p>
+                <div class="left_tab col-md-12">
+                    <p class="tab-content_left col-md-4 col-xs-6">Счет получателя</p>
+                    <p class="tab-content_right col-md-8 col-xs-6">4409 0211 0300 5073</p>
                 </div>
-                <div class="col-md-12">
-                    <p class="tab-content_left col-md-4">БИК (МКП, ВКП)</p>
-                    <p class="tab-content_right col-md-8">440902</p>
+                <div class="left_tab col-md-12">
+                    <p class="tab-content_left col-md-4 col-xs-6">БИК (МКП, ВКП)</p>
+                    <p class="tab-content_right col-md-8 col-xs-6">440902</p>
                 </div>
-                <div class="col-md-12">
-                    <p class="tab-content_left col-md-4">БИК (через банки)</p>
-                    <p class="tab-content_right col-md-8">440001</p>
+                <div class="left_tab col-md-12">
+                    <p class="tab-content_left col-md-4 col-xs-6">БИК (через банки)</p>
+                    <p class="tab-content_right col-md-8 col-xs-6">440001</p>
                 </div>
-                <div class="accordion " id="accordion2">
+            </div>
+
+            <div class="accordion " id="accordion2">
+                <div class="card">
+                    <div class="card-header" id="heading10">
+                        <button class="collapseButton" type="button" data-toggle="collapse"
+                                data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                            Где могут принять беженцев?
+                        </button>
+                    </div>
+
+                    <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion2">
+                        <div class="card-body">
+                            <ul>
+                                <li>Откройте приложение Элсом</li>
+                                <li>Получатель (Т.А.): +996 707 22 42 01</li>
+                                <li>Подтвердите оплату</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <div class="card">
-                        <div class="card-header" id="heading10">
+                        <div class="card-header" id="heading11">
                             <button class="collapseButton" type="button" data-toggle="collapse"
-                                    data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
-                                Где могут принять беженцев?
+                                    data-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
+                                <div>Что нужно пострадавшим?</div>
                             </button>
                         </div>
 
-                        <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion2">
+                        <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion2">
                             <div class="card-body">
                                 <ul>
                                     <li>Откройте приложение Элсом</li>
@@ -575,14 +705,15 @@
                         </div>
 
                         <div class="card">
-                            <div class="card-header" id="heading11">
+                            <div class="card-header" id="heading12">
                                 <button class="collapseButton" type="button" data-toggle="collapse"
-                                        data-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
-                                    <div>Что нужно пострадавшим?</div>
+                                        data-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
+                                    <div>Что не нужно приносить?</div>
                                 </button>
                             </div>
 
-                            <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion2">
+                            <div id="collapse12" class="collapse" aria-labelledby="heading12"
+                                 data-parent="#accordion2">
                                 <div class="card-body">
                                     <ul>
                                         <li>Откройте приложение Элсом</li>
@@ -591,48 +722,33 @@
                                     </ul>
                                 </div>
                             </div>
-
-                            <div class="card">
-                                <div class="card-header" id="heading12">
-                                    <button class="collapseButton" type="button" data-toggle="collapse"
-                                            data-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
-                                        <div>Что не нужно приносить?</div>
-                                    </button>
-                                </div>
-
-                                <div id="collapse12" class="collapse" aria-labelledby="heading12"
-                                     data-parent="#accordion2">
-                                    <div class="card-body">
-                                        <ul>
-                                            <li>Откройте приложение Элсом</li>
-                                            <li>Получатель (Т.А.): +996 707 22 42 01</li>
-                                            <li>Подтвердите оплату</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-
                 </div>
+
             </div>
+
         </div>
         <div class="section_right col-md-4">
             <div class="col-md-12">
-                <blockquote class="twitter-tweet"><p lang="ru" dir="ltr">как он приедет, так и поженимся! всё я сказала!
-                    😛❤️ <a href="https://t.co/RbxvkKrlHs">pic.twitter.com/RbxvkKrlHs</a></p>&mdash; саячка 🇰🇬 (@alyuqaa)
-                    <a href="https://twitter.com/alyuqaa/status/1571455339601567746?ref_src=twsrc%5Etfw">September 18,
-                        2022</a></blockquote>
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Dear free World, please, help us spread the
+                    word about a war that Putin’s puppet Emomali Rakhmon started against Kyrgyzstan!<a
+                            href="https://twitter.com/hashtag/StandForKyrgyzstan?src=hash&amp;ref_src=twsrc%5Etfw">#StandForKyrgyzstan</a>
+                    <a href="https://twitter.com/hashtag/KyrgyzstanUnderAttack?src=hash&amp;ref_src=twsrc%5Etfw">#KyrgyzstanUnderAttack</a><br>
+                    <a href="https://twitter.com/hashtag/stopRakhmon?src=hash&amp;ref_src=twsrc%5Etfw">#stopRakhmon</a>
+                    <a href="https://twitter.com/hashtag/stopputin?src=hash&amp;ref_src=twsrc%5Etfw">#stopputin</a> <a
+                            href="https://t.co/DAYJqlSaWN">pic.twitter.com/DAYJqlSaWN</a></p>&mdash; Aiturgan
+                    (@AiturxGan) <a href="https://twitter.com/AiturxGan/status/1571231719507869707?ref_src=twsrc%5Etfw">September
+                        17, 2022</a></blockquote>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                <blockquote class="twitter-tweet"><p lang="ru" dir="ltr">как он приедет, так и поженимся! всё я сказала!
-                    😛❤️ <a href="https://t.co/RbxvkKrlHs">pic.twitter.com/RbxvkKrlHs</a></p>&mdash; саячка 🇰🇬 (@alyuqaa)
-                    <a href="https://twitter.com/alyuqaa/status/1571455339601567746?ref_src=twsrc%5Etfw">September 18,
-                        2022</a></blockquote>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                <blockquote class="twitter-tweet"><p lang="ru" dir="ltr">как он приедет, так и поженимся! всё я сказала!
-                    😛❤️ <a href="https://t.co/RbxvkKrlHs">pic.twitter.com/RbxvkKrlHs</a></p>&mdash; саячка 🇰🇬 (@alyuqaa)
-                    <a href="https://twitter.com/alyuqaa/status/1571455339601567746?ref_src=twsrc%5Etfw">September 18,
-                        2022</a></blockquote>
+                <blockquote class="twitter-tweet"><p lang="und" dir="ltr">⚡URGENT<br>This video shows a chronological
+                    timeline of the Tajik invasion of villages of Kyrgyzstan! Share! The world should know the
+                    truth!<br>⚡СРОЧНО<br>Вся хронология нападения Таджикистана на нас! Поделитесь со всеми, мир должен
+                    это знать!<a href="https://twitter.com/hashtag/StandForKyrgyzstan?src=hash&amp;ref_src=twsrc%5Etfw">#StandForKyrgyzstan</a><a
+                            href="https://twitter.com/hashtag/KyrgyzstanUnderAttack?src=hash&amp;ref_src=twsrc%5Etfw">#KyrgyzstanUnderAttack</a>
+                    <a href="https://t.co/nMHQCIazAD">pic.twitter.com/nMHQCIazAD</a></p>&mdash; Stand For Batken
+                    (@ForBatken) <a href="https://twitter.com/ForBatken/status/1571107614599315457?ref_src=twsrc%5Etfw">September
+                        17, 2022</a></blockquote>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
