@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+<!--    <link rel="manifest" href="/site.webmanifest">-->
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -110,6 +110,49 @@
             justify-content: space-between;
         }
 
+    .header-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .header-block > * {
+        margin-right: 10px;
+    }
+    .header-block > img {
+        border-radius: 50%;
+    }
+
+    .header-block-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .language-select {
+        margin-left: 50px;
+    }
+    .language-select > * {
+        margin-right: 10px;
+    }
+
+    .movement-logo-and-name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media {
+        margin-right: 50px;
+    }
+    .social-media > * {
+        margin-left: 10px;
+    }
+
     </style>
 
     <!-- Google tag (gtag.js) -->
@@ -129,13 +172,37 @@
 </head>
 <body>
 <div class="main">
-    <div class="header">
-        <div class="container">
-            <h1>Pray for Kyrgyzstan</h1>
-            <h3>Помощь Кыргызстану</h3>
-            <h5>И пострадавшим от вторжения Таджикистана</h5>
+<!--    <div class="header">-->
+<!--        <div class="container">-->
+<!--            <h1>Pray for Kyrgyzstan</h1>-->
+<!--            <h3>Помощь Кыргызстану</h3>-->
+<!--            <h5>И пострадавшим от вторжения Таджикистана</h5>-->
+<!--        </div>-->
+<!--    </div>-->
+    <header>
+        <div class="header-block">
+            <div>Официальные хештеги</div>
+            <img src="static/images/kyrgyzstan_flag_icon.png" />
+            <div>#StandForKyrgyzstan</div>
+            <div>#KyrgyzstanUnderAttack</div>
         </div>
-    </div>
+
+        <div class="header-block-2">
+            <div class="language-select">
+                <a>Ру</a>
+                <a>Кы</a>
+                <a>En</a>
+            </div>
+            <div class="movement-logo-and-name">
+                <img src="static/images/movement_logo.png">
+                <b>БАТКЕНГЕ ЖАРДАМ</b>
+            </div>
+            <div class="social-media">
+                <img src="static/images/telegram-icon.png" />
+                <img src="static/images/instagram-icon.png" />
+            </div>
+        </div>
+    </header>
 
 
     <div class="content col-md-12">
