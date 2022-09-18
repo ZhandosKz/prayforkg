@@ -19,69 +19,348 @@
     <link rel="stylesheet" href="static/css/bootstrap.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: 'Montserrat', sans-serif;
-            background: url("static/images/bg.jpeg") #1f1514 no-repeat;
-            background-size: 350px;
-            background-position: center top;
+            font-family: 'Rubik', sans-serif;
         }
-    .header {
-        font-size: 30px;
-        color: #ffffff;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
 
-    .content {
-        /*background: rgba(255, 255, 255, 0.5);*/
-        min-height: 300px;
-        padding: 20px;
-        font-size: 16px;
-    }
+        .content {
+            padding: 67px 120px;
+        }
 
-    .content img {
-        width: 100%;
-    }
+        .section_head {
+            padding: 0;
+            margin: 0 0 40px;
+        }
 
-    .content__title {
-        text-align: center;
-        font-size: 30px;
-        margin-bottom: 20px;
-        color: #ffffff;
-    }
+        .section_head_q {
+            font-family: 'Rubik', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
 
-    .content__nav {
-        text-align: center;
-        margin-bottom: 20px;
-    }
+        .section_head_main {
+            font-family: 'Rubik', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
 
-    .content h5 {
-        color: #ffffff;
-        font-size: 25px;
-    }
+        .contentLeft {
+            padding: 0;
 
-    .panel .label {
-        cursor: pointer;
-        margin-left: 15px;
-    }
-    .panel-source {
-        margin-bottom: 10px;
-    }
-    .panel-default > .panel-heading {
-        color: #444;
-        font-weight: bold;
-    }
+        }
 
+        .custom_nav-tabs {
+            margin-top: 20px;
+            display: flex;
+            font-family: 'Rubik', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+            margin-bottom: 32px;
+        }
+
+        .tab-content {
+            margin-bottom: 40px;
+            padding: 0;
+        }
+
+        .left_tab {
+            padding: 0;
+            display: flex;
+        }
+
+        .tab-content_left {
+            font-family: 'Rubik', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+            opacity: 0.7;
+            padding: 0;
+        }
+
+        .tab-content_right {
+            font-family: 'Rubik', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+            padding: 0;
+        }
+
+        .collapseButton {
+            font-family: 'Rubik', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            background: none;
+            background: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-body ul{
+            margin-top: 10px;
+            padding: 20px;
+        }
+
+        .section_head2 {
+            padding-top: 135px;
+        }
+
+        .left_tab2{
+            padding-left: 0;
+            margin-bottom: 40px;
+        }
+        /*For mobile */
+        @media only screen and (max-width: 600px) {
+            .content {
+                padding: 32px 20px;
+            }
+
+            .section_head2 {
+                padding-top: 135px;
+            }
+
+            .section_head_q {
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000000;
+                margin: 0;
+                padding: 0;
+            }
+
+            .section_head_main {
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 26px;
+                color: #000000;
+                padding: 0;
+                margin: 8px 0 48px;
+            }
+
+            .custom_nav-tabs {
+                margin-top: 20px;
+                /*display: flex;*/
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: #000000;
+                margin-bottom: 32px;
+            }
+
+            .custom_nav-tabs li a {
+                padding: 5px;
+            }
+
+            .left_tab {
+                display: flex;
+            }
+
+            .tab-content_left {
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000000;
+                opacity: 0.7;
+                padding: 0;
+            }
+
+            .tab-content_right {
+                font-family: 'Rubik', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000000;
+                padding: 0;
+            }
+
+            .section_right {
+                margin-top: 135px;
+            }
+        }
+
+        .header-block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .header-block > * {
+            margin-right: 10px;
+        }
+        .header-block > img {
+            border-radius: 50%;
+            width: 35px;
+        }
+
+        .header-block-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .language-select {
+            margin-left: 50px;
+        }
+        .language-select > * {
+            margin-right: 10px;
+        }
+
+        .movement-logo-and-name {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-media {
+            margin-right: 50px;
+        }
+        .social-media > * {
+            margin-left: 10px;
+        }
+
+        .hero-section {
+            display: flex;
+            justify-content: center;
+            background: #1A1D3B;
+            height: 540px;
+            margin-bottom: 40px;
+        }
+
+        .hero-section-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 40px;
+        }
+        .hero-section-title {
+            font-size: 40px;
+            line-height: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .hero-section-btn-primary {
+            background: #FFFFFF;
+            border-radius: 200px;
+            padding: 10px 30px;
+            margin-bottom: 10px;
+            margin-right: 16px;
+            font-weight: 700;
+            color: #1A1D3B;
+        }
+        .hero-section-btn-secondary {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.3);;
+            color: #ffffff;
+            border-radius: 200px;
+            padding: 10px 30px;
+            font-weight: 700;
+        }
+
+        .hero-section-right {
+            display: flex;
+        }
+        .hero-section-image-mobile {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .hashtags-text {
+                display: none;
+            }
+
+            .language-select {
+                margin-left: 0;
+            }
+
+            .social-media {
+                margin-right: 0;
+            }
+
+            .hero-section{
+                height: 250px;
+                margin-bottom: 20px;
+            }
+
+            .hero-section-image-mobile {
+                /*display: flex;*/
+            }
+            .hero-section-image-desktop {
+                display: none;
+            }
+
+            .hero-section-title {
+                font-size: 30px;
+                line-height: 28px;
+            }
+            .hero-section-left {
+                padding-left: 20px;
+            }
+            .hero-section-right {
+                width: 25%;
+            }
+
+            .hero-section-btn-primary {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+            .hero-section-btn-secondary {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+        }
     </style>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5SSJDY2GQ7"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-5SSJDY2GQ7');
@@ -90,221 +369,388 @@
 </head>
 <body>
 <div class="main">
-    <div class="header">
-        <div class="container">
-            <h1>Pray for Kyrgyzstan</h1>
-            <h3>Помощь Кыргызстану</h3>
-            <h5>И пострадавшим от вторжения Таджикистана</h5>
+    <header>
+        <div class="header-block">
+            <div class="hashtags-text">Официальные хештеги</div>
+            <img src="static/images/kyrgyzstan_flag_icon.png" />
+            <div>#StandForKyrgyzstan</div>
+            <div>#KyrgyzstanUnderAttack</div>
+        </div>
+
+        <div class="header-block-2">
+            <div class="language-select">
+<!--                <a>Ру</a>-->
+<!--                <a>Кы</a>-->
+<!--                <a>En</a>-->
+            </div>
+            <div class="movement-logo-and-name">
+                <img src="static/images/movement_logo.png">
+                <b>БАТКЕНГЕ ЖАРДАМ</b>
+            </div>
+            <div class="social-media">
+                <a href="https://t.me/batkengejardam2022" target="_blank"><img src="static/images/telegram-icon.svg" /></a>
+                <a href="https://www.instagram.com/batkenge_jardam/" target="_blank" ><img src="static/images/instagram-icon.svg" /></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-section-left">
+            <div class="hero-section-title">Помощь пострадавшим от вторжения Таджикистана.</div>
+            <div>
+                <a href="#financial-help-info"><button class="hero-section-btn-primary">Помочь финансово</button></a>
+                <a href="#volunteering-help-info"><button class="hero-section-btn-secondary">Стать волонтером</button></a>
+            </div>
+        </div>
+        <div class="hero-section-right">
+            <img class="hero-section-image-desktop" src="static/images/hero-section/hero_desktop_alt@2x.webp" />
+            <img class="hero-section-image-mobile" src="static/images/hero-section/hero_mobile_alt@2x.webp" />
         </div>
     </div>
 
 
-    <div class="container content">
-        <div class="content__title">Способы помощи:</div>
-        <div class="content__nav">
-            <a href="#resources" class="btn btn-lg btn-success">Финансово</a>
-            <a href="#volunteer" class="btn btn-lg btn-primary">Волонтерство</a>
-        </div>
-        <a name="resources"></a>
-        <h5>Финансово</h5>
-        <div class="panel panel-default">
-            <div class="panel-heading">Реквизиты для сбора военным</div>
-            <div class="panel-body">
-                <div class="panel-source">!ОДеньги: <span data-original-title="Скопировано" data-placement="top" class="label label-default">(0700) 150 626</span></div>
-                <div class="panel-source">МБанк: <span data-original-title="Скопировано" data-placement="top" class="label label-default">(0550) 150 626</span></div>
-                <div class="panel-source">VISA Optima: <span data-original-title="Скопировано" data-placement="top" class="label label-default">4169 5853 4879  8470</span> (Aigerim Kazybaeva)</div>
-                <div class="panel-source">ДемирБанк:<br/>
-                    <span style="margin: 0" data-original-title="Скопировано" data-placement="top" class="label label-default">1180 0001 7677 1895</span> (KGS)<br/>
-                    <span style="margin: 0" data-original-title="Скопировано" data-placement="top" class="label label-default">1180 0001 7677 1996</span> (USD)<br/>
+    <div class="content col-md-12">
+        <div class="contentLeft col-md-8">
+            <div class="section_head col-md-12">
+                <div class="section_head_q col-md-12" id="financial-help-info">Как помочь финансово?</div>
+                <div class="section_head_main col-md-12">Реквизиты для перечисления благотворительной помощи</div>
+            </div>
+            <ul class="nav nav nav-tabs custom_nav-tabs col-md-12">
+                <li class="active"><a data-toggle="tab" href="#home">Счёт в системе казначейства</a></li>
+                <li><a data-toggle="tab" href="#menu1">Счёт через комбанки</a></li>
+
+            </ul>
+
+            <div class="tab-content col-md-12">
+                <div id="home" class="tab-pane fade in active tab-pane2">
+                    <div class="left_tab col-md-12" >
+                        <div class="tab-content_left col-md-4 col-xs-6">Получатель</div>
+                        <p class="tab-content_right col-md-8 col-xs-6">Аппарат полномочного представителя ПКР в Баткенской
+                            области</p>
+                    </div>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">Банк получателя</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">Центральное казначейство МФКР</p>
+                    </div>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">Счет получателя</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">4409 0211 0300 5073</p>
+                    </div>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">БИК (МКП, ВКП)</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">440902</p>
+                    </div>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">БИК (через банки)</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">440001</p>
+                    </div>
                 </div>
 
+                <div id="menu1" class="tab-pane fade">
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">Банк получателя</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">ОАО “Айыл Банк”</p>
+                    </div>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">Счет получателя</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">1352119929762602</p>
+                    </div>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">БИК (МКП, ВКП)</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">135001</p>
+                    </div>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">Назначение</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">Помощь пострадавшим в Баткенских событиях</p>
+                    </div>
+                    <div class="left_tab col-md-12">
+                        <p class="tab-content_left col-md-4 col-xs-6">Код платежа</p>
+                        <p class="tab-content_right col-md-8 col-xs-6">14411100</p>
+                    </div>
 
-                <div class="panel-source">VISA Optima: <span data-original-title="Скопировано" data-placement="top" class="label label-default">4169 5952 0530 7133</span> (Urmat Nasykulov)</div>
-                <div class="panel-source">МБанк: <span data-original-title="Скопировано" data-placement="top" class="label label-default">(0555) 123 399</span> (Urmat Nasykulov)</div>
-                <div class="panel-source">Из зарубежа можно отправить денежными переводом на имя Urmat Nasykulov:<br>
-                    <span style="margin: 0" data-original-title="Скопировано" data-placement="top" class="label label-default">+996555123399</span>
                 </div>
-
-
-                <h3>Крипто кошельки (сбор от <a href="https://twitter.com/gulnura2100" target="_blank">https://twitter.com/gulnura2100</a>):</h3>
-                <div class="panel-source">Крипто кошелек Binance: <span data-original-title="Скопировано" data-placement="top" class="label label-default">THq226yWrq2a2eif16z5j4f8sg7P9DY2Ea</span></div>
-                <div class="panel-source">Tron: <span data-original-title="Скопировано" data-placement="top" class="label label-default">TRC20</span></div>
-
-                <br>
-                На что собираем:
-                <ul>
-
-                    <li>тепловизоры, приборы ночного видения, бинокли</li>
-                    <li>бронежилеты, каски</li>
-                    <li>разведывательные дроны</li>
-                </ul>
             </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">Получатель: Аппарат полномочного представителя ПКР в Баткенской области
-                Банк получателя: Центральное казначейство МФКР
-            </div>
-            <div class="panel-body">
-                <div class="panel-source">Счет получателя в системе казначейства: <span data-original-title="Скопировано" data-placement="top" class="label label-default">4409 0211 0300 5073</span></div>
-                <div class="panel-source">БИК: <span data-original-title="Скопировано" data-placement="top" class="label label-default">440902</span> (через банк)</div>
-                <div class="panel-source">БИК: <span data-original-title="Скопировано" data-placement="top" class="label label-default">440001</span> (ВКП, МКП))</div>
-                <div class="panel-source">ИНН: <span data-original-title="Скопировано" data-placement="top" class="label label-default">01312199910086</span> </div>
-                <div class="panel-source">Код платежа: <br/><span style="margin: 0" data-original-title="Скопировано" data-placement="top" class="label label-default">14411100 - "текущая помощь"</span></div>
-                <br>
-                <div class="panel-source">Счет получателя через комбанки:<br/> <span style="margin-left: 0" data-original-title="Скопировано" data-placement="top" class="label label-default">1352 1199 2976 2602</span></div>
-                <div class="panel-source">Банк получатель:<br/> <span style="margin-left: 0" data-original-title="Скопировано" data-placement="top" class="label label-default">ОАО Айыл Банк</span></div>
-                <div class="panel-source">БИК: <span data-original-title="Скопировано" data-placement="top" class="label label-default">135001</span></div>
-                <div class="panel-source">Назначение платежа: <br/><span style="margin: 0; white-space: normal" data-original-title="Скопировано" data-placement="top" class="label label-default">помощь пострадавшим в Баткенских событиях, код платежа: 14411100 </span></div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">Реквизиты для сбора на медикаменты и средства первой необходимости</div>
-            <div class="panel-body">
-                <div class="panel-source">МБанк: <span data-original-title="Скопировано" data-placement="top" class="label label-default">+996 707 22 42 01</span> (Т.А.)</div>
-                <div class="panel-source">Элсом: <span data-original-title="Скопировано" data-placement="top" class="label label-default">+996 707 22 42 01</span> (Т.А.)</div>
-                <div class="panel-source">Баланс кг: <span data-original-title="Скопировано" data-placement="top" class="label label-default">+996 776 03 08 98</span> (Т.А.)</div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">Kaspi bank (Казахстан)</div>
-            <div class="panel-body">
-                <div style="margin-bottom: 10px">
-                    <img style="display: block; height: auto; width: 70px; margin: 0 auto" src="static/images/help/Logo_of_Kaspi_bank.png"/>
+
+            <div class="accordion " id="accordionExample">
+                <div class="card">
+                    <div class="card-header collapseButton" id="headingOne">
+                        Красный полумесяц
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body ul">
+                            <ul>
+                                <li>Красный полумесяц, пожертвования банковскими картами</li>
+                                <a href="https://donate.redcrossredcrescent.org/kg/helpbatken2022/~%D0%BC%D0%BE%D0%B5-%D0%BF%D0%BE%D0%B6%D0%B5%D1%80%D1%82%D0%B2%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5?context_form_id=form_5cdc3bba123115c9e49cebf94c0c957dbc790d14_63253eeae88cc7.88225688" target="_blank">
+                                    donate.redcrossredcrescent.org
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="panel-source">Номер карты: <span data-original-title="Скопировано" data-placement="top" class="label label-default">4400 4301 5960 6596</span></div>
-                <div class="panel-source">Перевод по телефону: <br/> <span style="margin: 0; white-space: normal" data-original-title="Скопировано" data-placement="top" class="label label-default">87006918066</span> Nazgul Zharbulova</div>
+                <div class="card">
+                    <div class="card-header collapseButton" id="headingTwo">
+                        Kaspi bank (Казахстан)
+                    </div>
+                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li>Номер карты: 4400 4301 5960 6596</li>
+                                <li>Перевод по телефону: 87006918066 Nazgul Zharbulova</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+<!--                <div class="card">-->
+<!--                    <div class="card-header" id="headingThree">-->
+<!--                        <h5 class="mb-0">-->
+<!--                            <button class="collapseButton" data-toggle="collapse" data-target="#collapseThree"-->
+<!--                                    aria-expanded="false" aria-controls="collapseThree">-->
+<!--                                Demir Bank-->
+<!--                            </button>-->
+<!--                        </h5>-->
+<!--                    </div>-->
+<!--                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">-->
+<!--                        <div class="card-body">-->
+<!--                            <ul>-->
+<!--                                <li>Откройте приложение Элсом</li>-->
+<!--                                <li>Получатель (Т.А.): +996 707 22 42 01</li>-->
+<!--                                <li>Подтвердите оплату</li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="card">-->
+<!--                    <div class="card-header" id="headingFour">-->
+<!--                        <h5 class="mb-0">-->
+<!--                            <button class="collapseButton" data-toggle="collapse" data-target="#collapseFour"-->
+<!--                                    aria-expanded="false" aria-controls="collapseFour">-->
+<!--                                Элкарт-->
+<!--                            </button>-->
+<!--                        </h5>-->
+<!--                    </div>-->
+<!--                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">-->
+<!--                        <div class="card-body">-->
+<!--                            <ul>-->
+<!--                                <li>Откройте приложение Элсом</li>-->
+<!--                                <li>Получатель (Т.А.): +996 707 22 42 01</li>-->
+<!--                                <li>Подтвердите оплату</li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="card">-->
+<!--                    <div class="card-header" id="headingFive">-->
+<!--                        <h5 class="mb-0">-->
+<!--                            <button class="collapseButton" data-toggle="collapse" data-target="#collapseFive"-->
+<!--                                    aria-expanded="false" aria-controls="collapseFive">-->
+<!--                                MBANK-->
+<!--                            </button>-->
+<!--                        </h5>-->
+<!--                    </div>-->
+<!--                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">-->
+<!--                        <div class="card-body">-->
+<!--                            <ul>-->
+<!--                                <li>Откройте приложение Элсом</li>-->
+<!--                                <li>Получатель (Т.А.): +996 707 22 42 01</li>-->
+<!--                                <li>Подтвердите оплату</li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="card">-->
+<!--                    <div class="card-header" id="heading6">-->
+<!--                        <h5 class="mb-0">-->
+<!--                            <button class="collapseButton" data-toggle="collapse" data-target="#collapse6"-->
+<!--                                    aria-expanded="false" aria-controls="collapse6">-->
+<!--                                Balance.KG-->
+<!--                            </button>-->
+<!--                        </h5>-->
+<!--                    </div>-->
+<!--                    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">-->
+<!--                        <div class="card-body">-->
+<!--                            <ul>-->
+<!--                                <li>Откройте приложение Элсом</li>-->
+<!--                                <li>Получатель (Т.А.): +996 707 22 42 01</li>-->
+<!--                                <li>Подтвердите оплату</li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="card">-->
+<!--                    <div class="card-header" id="heading7">-->
+<!--                        <h5 class="mb-0">-->
+<!--                            <button class="collapseButton" data-toggle="collapse" data-target="#collapse7"-->
+<!--                                    aria-expanded="false" aria-controls="collapse7">-->
+<!--                                О! Деньги-->
+<!--                            </button>-->
+<!--                        </h5>-->
+<!--                    </div>-->
+<!--                    <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">-->
+<!--                        <div class="card-body">-->
+<!--                            <ul>-->
+<!--                                <li>Откройте приложение Элсом</li>-->
+<!--                                <li>Получатель (Т.А.): +996 707 22 42 01</li>-->
+<!--                                <li>Подтвердите оплату</li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="card">-->
+<!--                    <div class="card-header" id="heading8">-->
+<!--                        <h5 class="mb-0">-->
+<!--                            <button class="collapseButton" data-toggle="collapse" data-target="#collapse8"-->
+<!--                                    aria-expanded="false" aria-controls="collapse8">-->
+<!--                                О! Деньги-->
+<!--                            </button>-->
+<!--                        </h5>-->
+<!--                    </div>-->
+<!--                    <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">-->
+<!--                        <div class="card-body">-->
+<!--                            <ul>-->
+<!--                                <li>Откройте приложение Элсом</li>-->
+<!--                                <li>Получатель (Т.А.): +996 707 22 42 01</li>-->
+<!--                                <li>Подтвердите оплату</li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="card">-->
+<!--                    <div class="card-header" id="heading9">-->
+<!--                        <h5 class="mb-0">-->
+<!--                            <button class="collapseButton" data-toggle="collapse" data-target="#collapse9"-->
+<!--                                    aria-expanded="false" aria-controls="collapse9">-->
+<!--                                Онлайн-платёж-->
+<!--                            </button>-->
+<!--                        </h5>-->
+<!--                    </div>-->
+<!--                    <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">-->
+<!--                        <div class="card-body">-->
+<!--                            <ul>-->
+<!--                                <li>Откройте приложение Элсом</li>-->
+<!--                                <li>Получатель (Т.А.): +996 707 22 42 01</li>-->
+<!--                                <li>Подтвердите оплату</li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+            </div>
+            <div class="section_head section_head2 col-md-12" id="volunteering-help-info">
+                <div class="section_head_q col-md-12">Как стать волонтёром?</div>
+                <div class="section_head_main col-md-12">Контакты для координации гуманитарной помощи</div>
+            </div>
+
+            <div class="left_tab2 col-md-12">
+                <div class="left_tab col-md-12">
+                    <p class="tab-content_left col-md-4 col-xs-6">Адрес</p>
+                    <p class="tab-content_right col-md-8 col-xs-6">Дворец Спорта им. Каба у. Кожомкула, г. Бишкек</p>
+                </div>
+                <div class="left_tab col-md-12">
+                    <p class="tab-content_left col-md-4 col-xs-6">Горячая линия</p>
+                    <p class="tab-content_right col-md-8 col-xs-6">1227</p>
+                </div>
+                <div class="left_tab col-md-12">
+                    <p class="tab-content_left col-md-4 col-xs-6">Telegram</p>
+                    <p class="tab-content_right col-md-8 col-xs-6"><a href="https://t.me/batkengejardam2022" target="_blank">t.me/batkengejardam2022</a></p>
+                </div>
+                <div class="left_tab col-md-12">
+                    <p class="tab-content_left col-md-4 col-xs-6">Instagram</p>
+                    <p class="tab-content_right col-md-8 col-xs-6"><a href="https://www.instagram.com/batkenge_jardam/" target="_blank">@batkenge_jardam</a></p>
+                </div>
+            </div>
+
+<!--            <div class="accordion " id="accordion2">-->
+<!--                <div class="card">-->
+<!--                    <div class="card-header" id="heading10">-->
+<!--                        <button class="collapseButton" type="button" data-toggle="collapse"-->
+<!--                                data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">-->
+<!--                            Где могут принять беженцев?-->
+<!--                        </button>-->
+<!--                    </div>-->
+
+<!--                    <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion2">-->
+<!--                        <div class="card-body">-->
+<!--                            <ul>-->
+<!--                                <li>Откройте приложение Элсом</li>-->
+<!--                                <li>Получатель (Т.А.): +996 707 22 42 01</li>-->
+<!--                                <li>Подтвердите оплату</li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="card">-->
+<!--                        <div class="card-header" id="heading11">-->
+<!--                            <button class="collapseButton" type="button" data-toggle="collapse"-->
+<!--                                    data-target="#collapse11" aria-expanded="true" aria-controls="collapse11">-->
+<!--                                <div>Что нужно пострадавшим?</div>-->
+<!--                            </button>-->
+<!--                        </div>-->
+
+<!--                        <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion2">-->
+<!--                            <div class="card-body">-->
+<!--                                <ul>-->
+<!--                                    <li>Откройте приложение Элсом</li>-->
+<!--                                    <li>Получатель (Т.А.): +996 707 22 42 01</li>-->
+<!--                                    <li>Подтвердите оплату</li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="card">-->
+<!--                            <div class="card-header" id="heading12">-->
+<!--                                <button class="collapseButton" type="button" data-toggle="collapse"-->
+<!--                                        data-target="#collapse12" aria-expanded="true" aria-controls="collapse12">-->
+<!--                                    <div>Что не нужно приносить?</div>-->
+<!--                                </button>-->
+<!--                            </div>-->
+
+<!--                            <div id="collapse12" class="collapse" aria-labelledby="heading12"-->
+<!--                                 data-parent="#accordion2">-->
+<!--                                <div class="card-body">-->
+<!--                                    <ul>-->
+<!--                                        <li>Откройте приложение Элсом</li>-->
+<!--                                        <li>Получатель (Т.А.): +996 707 22 42 01</li>-->
+<!--                                        <li>Подтвердите оплату</li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+
+        </div>
+        <div class="section_right col-md-4">
+            <div class="col-md-12">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Dear free World, please, help us spread the
+                    word about a war that Putin’s puppet Emomali Rakhmon started against Kyrgyzstan!<a
+                            href="https://twitter.com/hashtag/StandForKyrgyzstan?src=hash&amp;ref_src=twsrc%5Etfw">#StandForKyrgyzstan</a>
+                    <a href="https://twitter.com/hashtag/KyrgyzstanUnderAttack?src=hash&amp;ref_src=twsrc%5Etfw">#KyrgyzstanUnderAttack</a><br>
+                    <a href="https://twitter.com/hashtag/stopRakhmon?src=hash&amp;ref_src=twsrc%5Etfw">#stopRakhmon</a>
+                    <a href="https://twitter.com/hashtag/stopputin?src=hash&amp;ref_src=twsrc%5Etfw">#stopputin</a> <a
+                            href="https://t.co/DAYJqlSaWN">pic.twitter.com/DAYJqlSaWN</a></p>&mdash; Aiturgan
+                    (@AiturxGan) <a href="https://twitter.com/AiturxGan/status/1571231719507869707?ref_src=twsrc%5Etfw">September
+                        17, 2022</a></blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet"><p lang="und" dir="ltr">⚡URGENT<br>This video shows a chronological
+                    timeline of the Tajik invasion of villages of Kyrgyzstan! Share! The world should know the
+                    truth!<br>⚡СРОЧНО<br>Вся хронология нападения Таджикистана на нас! Поделитесь со всеми, мир должен
+                    это знать!<a href="https://twitter.com/hashtag/StandForKyrgyzstan?src=hash&amp;ref_src=twsrc%5Etfw">#StandForKyrgyzstan</a><a
+                            href="https://twitter.com/hashtag/KyrgyzstanUnderAttack?src=hash&amp;ref_src=twsrc%5Etfw">#KyrgyzstanUnderAttack</a>
+                    <a href="https://t.co/nMHQCIazAD">pic.twitter.com/nMHQCIazAD</a></p>&mdash; Stand For Batken
+                    (@ForBatken) <a href="https://twitter.com/ForBatken/status/1571107614599315457?ref_src=twsrc%5Etfw">September
+                        17, 2022</a></blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
-
-        <div class="panel panel-default">
-            <div class="panel-heading">Красный полумесяц, пожертвования банковскими картами</div>
-            <div class="panel-body">
-                <a style="font-weight: bold" href="https://donate.redcrossredcrescent.org/kg/helpbatken2022/~%D0%BC%D0%BE%D0%B5-%D0%BF%D0%BE%D0%B6%D0%B5%D1%80%D1%82%D0%B2%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5?context_form_id=form_5cdc3bba123115c9e49cebf94c0c957dbc790d14_63253eeae88cc7.88225688" target="_blank">donate.redcrossredcrescent.org</a>
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-heading">Кошелёк «О!Деньги», раздел «Помощь Баткену»</div>
-            <div class="panel-body">
-                Сегодня каждый кыргызстанец всем сердцем с жителями Баткенской области.<br/>
-                В это непростое время важно оказать поддержку тем, кто так сильно в ней сейчас нуждается.<br/>
-                Перевести любую желаемую сумму в помощь нашим соотечественникам можно через кошелек «О!Деньги».<br/>
-                <br/>
-                ➡️ Как это сделать?<br/>
-                <br/>
-                1. Откройте «Мой О!», раздел «О!Деньги»;<br/>
-                2. Нажмите «Поиск по каталогу», затем выберите «Помощь Баткену»;<br/>
-                3. Оплатите желаемую сумму.<br/>
-                <br/>
-                Все собранные средства будут направлены для оказания помощи жителям приграничных районов Баткенской области.
-                <br/>
-                Желаем мирного неба и благополучия нашей стране 🇰🇬
-                <br/>
-                <br/>
-                ***
-                <br/>
-                <br/>
-                Бүгүн ар бир кыргызстандыктын жүрөгү Баткен облусунун тургундары менен бирге какты.<br/>
-                Мындай оор кырдаалда колдоого муктаж кишиге жардам берүү абдан маанилүү.<br/>
-                «О!Деньги» капчыгы аркылуу каалаган сумманы биздин мекендештерге которсо болот.<br/>
-                <br/>
-                ➡️ Аны кантип аткаруу керек?<br/>
-                <br/>
-                1. «Мой О!» тиркемесин, «О!Деньги» бөлүмүн ачыңыз;<br/>
-                2. «Каталог боюнча издөө» баскычын тандап, «Баткенге жардам» бөлүмүнө кириңиз;<br/>
-                3. Каалаган суммаңызды которуңуз.<br/>
-                <br/>
-                Бардык топтолгон каражаттар Баткен облусунун чек ара аймактарынын тургундарына багытталат.<br/>
-                <br/>
-                Өлкөбүзгө ачык асман, бакубатчылык каалайбыз<br/>
-
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">Реквизиты счета в долларах США (для физических лиц) в ОАО РСК Банк</div>
-            <div class="panel-body">
-                <div class="panel-source">Central Treasury of the Ministry of Finance of the Kyrgyz Republic in favor of ACC: <span data-original-title="Скопировано" data-placement="top" class="label label-default">1299005030100020</span></div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">Реквизиты счета в иностранной валюте (для юридических лиц) в ОАО РСК Банк</div>
-            <div class="panel-body">
-                <div>В долларах США, евро, российских рублях, казахстанских тенге</div>
-                <div class="panel-source">Beneficiary: <br/> <span style="margin: 0; white-space: normal" data-placement="top" data-original-title="Скопировано" class="label label-default">Central Treasury of the Ministry of Finance of the Kyrgyz Republic</span></div>
-                <div class="panel-source">Beneficiary account: <br/> № <span style="margin: 0" data-placement="top" data-original-title="Скопировано" class="label label-default">1013350100590106</span></div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">Срочный сбор средств для оказания помощи в Баткене</div>
-            <div class="panel-body">
-                <div class="panel-source">Элсом: <span data-original-title="Скопировано" data-placement="top" class="label label-default">0505 221 222</span></div>
-                <div class="panel-source">МБанк: <span data-original-title="Скопировано" data-placement="top" class="label label-default">996550794640</span></div>
-                <div class="panel-source">Оптима М.У.К: <span data-original-title="Скопировано" data-placement="top" class="label label-default">4169 5853 5631 3568</span></div>
-                <div class="panel-source">Элкарт K. 0.: <span data-original-title="Скопировано" data-placement="top" class="label label-default">9417 3794 4792 9353</span></div>
-            </div>
-        </div>
-
-        <br/>
-
-
-        <img src="static/images/help/33.jpg">
-        <br/>
-        <img src="static/images/help/2.jpeg">
-        <br/>
-        <a name="volunteer"></a>
-        <h5>Волонтерство</h5>
-        <div class="panel panel-default">
-            <div class="panel-heading">Телеграм канал для координации гуманитарной помощи</div>
-            <div class="panel-body">
-                <a href="https://t.me/batkenreaction" target="_blank" style="font-weight: bold">t.me/batkenreaction Координация (Баткен🇰🇬)</a>
-            </div>
-        </div>
-        <img src="static/images/help/18_1442.png">
-        <br/>
-        <br/>
-        <img src="static/images/help/0017.png">
-        <br/>
-        <br/>
-        <img src="static/images/help/2346.png">
-        <br/>
-        <br/>
-        <img src="static/images/help/2322.jpg">
-        <br/>
-        <br/>
-        <img src="static/images/help/2025.png">
-        <br/>
-        <br/>
-        <img src="static/images/help/2016.png">
-        <br/>
-        <br/>
-        <img src="static/images/help/2008.png">
-        <br/>
-        <br/>
-        <img src="static/images/help/6_1.jpeg">
-        <br/>
-        <br/>
-        <img src="static/images/help/5_1.png">
-        <br/>
-        <br/>
-        <img src="static/images/help/1_6.jpeg">
-        <br/>
-        <br/>
-        <img src="static/images/help/1_5.jpeg">
-        <br/>
-        <br/>
-        <img src="static/images/help/1_4.jpeg">
-        <br/>
-        <br/>
-        <img src="static/images/help/1_3.png">
-        <br/>
-        <br/>
-        <img src="static/images/help/1_1.png">
-        <br/>
-        <br/>
-        <img src="static/images/help/1_2.jpg">
-        <br/>
-
-
     </div>
 </div>
 
@@ -322,6 +768,7 @@
         }, 1000)
 
     })
+
     function copyText(text) {
         var $temp = $("<input>");
         $("body").append($temp);
