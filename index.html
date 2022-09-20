@@ -329,6 +329,12 @@
         .hero-section-image-mobile {
             display: none;
         }
+        .hero-section-image-desktop {
+            width: 745px;
+        }
+        .blur-hero-image-mobile {
+            display: none;
+        }
 
         .card-body.card-body_regular {
             padding-top: 20px;
@@ -372,13 +378,41 @@
             }
 
             .hero-section{
-                height: 250px;
+                height: 300px;
                 margin-bottom: 20px;
             }
 
-            .hero-section-image-mobile {
-                /*display: flex;*/
+            .blur-hero-image-mobile {
+                display: block;
+                position: absolute;
+                right: 13%;
+                height: 300px;
+                width: 50px;
+                background: linear-gradient(270deg, rgba(26, 29, 59, 0) 0%, #1A1D3B 100%);
+                z-index: 10;
             }
+
+            .hero-section-image-mobile {
+                display: block;
+                overflow: hidden;
+            }
+
+            .hero-section-mobile-slider {
+                background: url("static/images/hero-section/hero_mobile@2x.jpg") repeat-x;
+                height: 300px;
+                width: 600px;
+                animation: slide 60s linear infinite;
+                background-size: cover;
+            }
+            @keyframes slide{
+                0% {
+                    transform: translate3d(0, 0, 0);
+                }
+                100% {
+                    transform: translate3d(-1692px, 0, 0);
+                }
+            }
+
             .hero-section-image-desktop {
                 display: none;
             }
@@ -444,6 +478,7 @@
         </div>
     </header>
 
+    <div class="blur-hero-image-mobile"></div>
     <div class="hero-section">
         <div class="hero-section-left">
             <div class="hero-section-title">Помощь пострадавшим от вторжения Таджикистана.</div>
@@ -455,7 +490,9 @@
         </div>
         <div class="hero-section-right">
             <img class="hero-section-image-desktop" src="static/images/hero-section/hero_desktop_alt@2x.webp" />
-            <img class="hero-section-image-mobile" src="static/images/hero-section/hero_mobile_alt@2x.webp" />
+            <div class="hero-section-image-mobile">
+                <div class="hero-section-mobile-slider"></div>
+            </div>
         </div>
     </div>
 
